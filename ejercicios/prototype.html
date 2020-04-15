@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    <a href="/ejercicios/"></a>
+    <p><em>Abre la consola</em></p>
+
+    <script>
+
+        // Un objeto común y corriente 
+        // const heroMethods={
+        //     saludar : function () {
+        //         console.log(`Hello i'm  ${this.name}`)
+        //     }
+        // }
+
+        function Hero(name){
+            //const hero=Object.create(heroMethods);
+            this.name=name;
+            //return hero;
+
+        }
+
+        Hero.prototype.saludar=function(){
+            console.log(`New hero ${this.name}`);
+        };
+
+        const zelda= new Hero('zelda')
+
+        zelda.saludar();       
+        const link= new Hero('link')
+        link.saludar();
+
+        // const newObject=Object.create();
+
+
+    </script>
+    
+</body>
+</html>
