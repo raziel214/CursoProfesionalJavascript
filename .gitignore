@@ -4,6 +4,9 @@
 /dist
 /tmp
 /out-tsc
+/.cache
+dist
+.cache
 
 # Runtime data
 pids
