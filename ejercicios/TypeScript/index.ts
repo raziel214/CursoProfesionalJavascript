@@ -49,7 +49,7 @@ function add(a: number, b: number) {
     return a + b;
 
 }
-const result = add(9, 9);
+const result = add(9, 20);
 console.log(result);
 
 
@@ -75,3 +75,26 @@ const richard = fullName('Agente');
 console.log(richard);
 
 
+interface Rectangulo{
+    ancho: number
+    alto:number
+    
+
+}
+
+let rect: Rectangulo = {
+    ancho: 4,
+    alto: 6
+};
+
+function area(r: Rectangulo): number{ 
+    return r.alto*r.ancho
+}
+
+const areaRect = area(rect);
+
+console.log(areaRect);
+
+rect.toString = function () {
+    return `Un rectangulo ${this.color}`
+};
